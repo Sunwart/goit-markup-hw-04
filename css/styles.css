@@ -6,6 +6,7 @@
   --brand-color: #2196f3;
   --text-color: #757575;
   --titles-color: #212121;
+  --additional-color: #afb1b8;
   --card-set-gap: 30px;
 }
 
@@ -279,19 +280,29 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.sm-icons {
+  display: flex;
+  justify-content: center;
+}
 .sm-icon {
   fill: currentColor;
+  align-self: center;
 }
-.member-sm-icon {
-  color: #afb1b8;
-  display: inline-block;
+.sm-icon-container {
   width: 44px;
   height: 44px;
-  border-radius: 50%;
-  padding: 12px;
 }
-.member-sm-icon:not(:last-of-type) {
+.sm-icon-container:not(:last-child) {
   margin-right: 10px;
+}
+.member-sm-icon {
+  display: inline-block;
+  border-radius: 50%;
+  color: var(--additional-color);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 .member-sm-icon:hover {
   color: var(--basic-color);
@@ -311,11 +322,11 @@ ul {
   fill: currentColor;
 }
 .client {
-  color: #afb1b8;
+  color: var(--additional-color);
   display: inline-block;
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--additional-color);
   border-radius: 4px;
   padding: 16px 32px;
 }
@@ -473,18 +484,16 @@ ul {
   margin-bottom: 20px;
 }
 
-.sm-icon-bg {
-  color: var(--basic-color);
+.fsm-icon {
   display: inline-block;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  padding: 12px;
+  border-radius: 50%;
+  color: var(--basic-color);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }
-.sm-icon-bg:not(:last-of-type) {
-  margin-right: 10px;
-}
-.sm-icon-bg:hover {
+.fsm-icon:hover {
   background-color: var(--brand-color);
 }
